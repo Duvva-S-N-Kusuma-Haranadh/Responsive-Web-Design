@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(270deg, #746996, #6161b0, #393985);
+    color: #f3f3f3;
+    font-family: Tahoma;
+}
+
+#title,
+#description {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#survey-form {
+    background-color: #272747;
+    margin: auto;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 24px 16px;
+    font-size: 16px;
+}
+
+fieldset {
+    border: 0;
+    margin: 1em;
+    border-top: 1px solid #6966a2;
+}
+
+label {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin: 1em auto;
+    border: 0;
+}
+
+#dropdown,
+input {
+    height: 18px;
+}
+
+input[type="radio"] {
+    width: unset;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+#submit {
+    background-color: #f3f3f3;
+    width: 60%;
+    margin: 1em auto;
+    display: block;
+    font-size: 16px;
+}

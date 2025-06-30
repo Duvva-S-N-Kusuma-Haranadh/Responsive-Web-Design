@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Answering the Required Questions help us to analyze the employment and unemployment</p>
+    <form id="survey-form" method="POST" action="/">
+        <fieldset id="basic-information">
+            <legend>Basic Information</legend>
+            <label for="name" id="name-label">
+                Name <input type="text" id="name" placeholder="Enter your Name" required />
+            </label>
+
+            <label for="email" id="email-label">
+                Email <input type="email" id="email" placeholder="Enter you Email" required />
+            </label>
+
+            <label for="number" id="number-label">
+                Age <input type="number" id="number" min=18 max=120 placeholder="Enter your Age" required />
+            </label>
+
+            Address <textarea id="address" rows=3 placeholder="Where do you live?" required></textarea>
+            Short Bio <textarea id="bio" rows=3 placeholder="Describe Yourself..." required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Which option best describes your current role?</legend>
+            <label for="role" id="role-label">
+                <select id="dropdown">
+                    <option>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Part-TIme">Part-Time</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Freelance">Freelance</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset id="gender">
+            <legend>Are you a?</legend>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male" class="inline" checked /> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female" class="inline" /> Female
+            </label>
+            <label>
+                <input type="radio" id="other" name="gender" value="other" class="inline" /> Other
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What Languages do you Speak?</legend>
+            <label>
+                <input type="checkbox" name="language" id="telugu" value="Telugu" class="inline" /> Telugu
+            </label>
+            <label>
+                <input type="checkbox" name="language" id="hindi" value="Hindi" class="inline" /> Hindi
+            </label>
+            <label>
+                <input type="checkbox" name="language" id="tamil" value="Tamil" class="inline" /> Tamil
+            </label>
+            <label>
+                <input type="checkbox" name="language" id="malayalam" value="Malayalam" class="inline" /> Malayalam
+            </label>
+            <label>
+                <input type="checkbox" name="language" id="kannada" value="Kannada" class="inline" /> Kannada
+            </label>
+            <label>
+                <input type="checkbox" name="language" id="english" value="English" class="inline" /> English
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+</body>
+
+</html>
