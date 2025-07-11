@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 18px;
+    ;
+}
+
+p,
+.nav-link,
+ul {
+    font-family: sans-serif;
+    font-size: large;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#navbar .nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+#main-doc {
+    margin-left: 260px;
+}
+
+@media (max-width: 720px) {
+    .nav-link {
+        display: none;
+    }
+}
