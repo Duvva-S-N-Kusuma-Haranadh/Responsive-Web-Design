@@ -6,10 +6,16 @@ main {
   padding: 0 20%;
 }
 
-.projects {
+#mini-projects, #main-projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid red;
+}
+
+#mini-projects button, #main-projects button {
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid #333;
 }
