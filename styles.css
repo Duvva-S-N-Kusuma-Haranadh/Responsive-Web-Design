@@ -20,7 +20,7 @@ main {
   border: 1px solid #333;
 }
 
-#mini-projects button a, #main-projects button a
+#mini-projects a, #main-projects a
 {
   color: black;
   font-weight: bold;
