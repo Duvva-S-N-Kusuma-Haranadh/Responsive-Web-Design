@@ -6,7 +6,7 @@ main {
   padding: 0 20%;
 }
 
-#mini-projects, #main-projects {
+.projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
