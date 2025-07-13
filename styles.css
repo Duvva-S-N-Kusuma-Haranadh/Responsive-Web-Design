@@ -33,4 +33,5 @@ a:hover
 {
   font-size: x-large;
   color: white;
+  transition: 1s ease-in-out;
 }
